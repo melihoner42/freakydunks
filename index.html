@@ -39,15 +39,26 @@
       text-shadow: 1px 1px 4px black;
     }
 
-    a {
+    .links {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .coffee {
       font-size: 1.2em;
       color: yellow;
       text-decoration: none;
       font-weight: bold;
-      margin-top: 30px;
     }
-    a:hover {
+    .coffee:hover {
       text-decoration: underline;
+    }
+
+    .playbadge img {
+      height: 60px;
     }
   </style>
 </head>
@@ -57,7 +68,16 @@
   <p>Support &amp; Contact: <a href="mailto:oenerm42@gmail.com" style="color:lightblue;">oenerm42@gmail.com</a></p>
   <p>Hi, I’m Melih 👋 Developer of Freaky Dunks 🏀🔥 – a fun and fair basketball arcade game. 
      Your support keeps me motivated and means a lot. 🙏</p>
-  
-  <a href="https://buymeacoffee.com/m.oner" target="_blank">☕ Buy Me a Coffee</a>
+
+  <div class="links">
+    <!-- Google Play Badge -->
+    <a class="playbadge" href="https://play.google.com/store/apps/details?id=com.shakogames.freakydunks" target="_blank">
+      <img alt="Get it on Google Play"
+           src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"/>
+    </a>
+
+    <!-- Buy Me a Coffee -->
+    <a class="coffee" href="https://buymeacoffee.com/m.oner" target="_blank">☕ Buy Me a Coffee</a>
+  </div>
 </body>
 </html>
